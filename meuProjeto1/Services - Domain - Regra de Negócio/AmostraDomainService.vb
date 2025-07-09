@@ -1,15 +1,17 @@
 ﻿Imports meuProjeto1.Models
 Imports meuProjeto1.Data
+Imports meuProjeto1.Interfaces
 
 Namespace meuProjeto1.Services
 
     Public Class AmostraDomainService
 
-        Private ReadOnly _repositorio As ManipularAmostrasNoBanco
+        Private ReadOnly _repositorio As IAmostraRepositorio
 
-        'Construtor sobrecarregado que recebe o objeto ManipularAmostrasBanco
-        'Isso garantirá que _repositório já esteja instanciado ao receber uma chamada
-        Public Sub New(repositorio As ManipularAmostrasNoBanco)
+        ' Construtor que recebe uma implementação da interface IAmostraRepositorio.
+        ' Isso permite a inversão de dependência, desacoplando esta classe de uma implementação específica.
+        ' Facilita testes unitários, manutenção e reutilização, já que qualquer classe que implemente a interface pode ser usada.
+        Public Sub New(repositorio As IAmostraRepositorio)
             _repositorio = repositorio
         End Sub
 
