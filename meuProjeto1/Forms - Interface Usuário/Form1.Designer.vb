@@ -40,7 +40,7 @@ Partial Class Form1
         'btnCadastrar
         '
         Me.btnCadastrar.Location = New System.Drawing.Point(178, 176)
-        Me.btnCadastrar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCadastrar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCadastrar.Name = "btnCadastrar"
         Me.btnCadastrar.Size = New System.Drawing.Size(84, 41)
         Me.btnCadastrar.TabIndex = 0
@@ -50,7 +50,7 @@ Partial Class Form1
         'btnAtualizar
         '
         Me.btnAtualizar.Location = New System.Drawing.Point(267, 176)
-        Me.btnAtualizar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAtualizar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAtualizar.Name = "btnAtualizar"
         Me.btnAtualizar.Size = New System.Drawing.Size(84, 41)
         Me.btnAtualizar.TabIndex = 0
@@ -60,7 +60,7 @@ Partial Class Form1
         'btnDeletar
         '
         Me.btnDeletar.Location = New System.Drawing.Point(356, 176)
-        Me.btnDeletar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnDeletar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDeletar.Name = "btnDeletar"
         Me.btnDeletar.Size = New System.Drawing.Size(84, 41)
         Me.btnDeletar.TabIndex = 0
@@ -70,7 +70,7 @@ Partial Class Form1
         'txtNomeAmostra
         '
         Me.txtNomeAmostra.Location = New System.Drawing.Point(175, 52)
-        Me.txtNomeAmostra.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNomeAmostra.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNomeAmostra.Name = "txtNomeAmostra"
         Me.txtNomeAmostra.Size = New System.Drawing.Size(295, 20)
         Me.txtNomeAmostra.TabIndex = 2
@@ -78,7 +78,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(125, 54)
+        Me.Label1.Location = New System.Drawing.Point(125, 56)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(45, 13)
@@ -88,7 +88,7 @@ Partial Class Form1
         'txtDiametro
         '
         Me.txtDiametro.Location = New System.Drawing.Point(175, 85)
-        Me.txtDiametro.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtDiametro.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDiametro.Name = "txtDiametro"
         Me.txtDiametro.Size = New System.Drawing.Size(295, 20)
         Me.txtDiametro.TabIndex = 3
@@ -96,7 +96,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(118, 88)
+        Me.Label2.Location = New System.Drawing.Point(118, 89)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(52, 13)
@@ -126,17 +126,17 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(153, 21)
+        Me.Label4.Location = New System.Drawing.Point(115, 23)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(19, 13)
+        Me.Label4.Size = New System.Drawing.Size(55, 13)
         Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Id:"
+        Me.Label4.Text = "Código Id:"
         '
         'txtIdAmostra
         '
         Me.txtIdAmostra.Location = New System.Drawing.Point(175, 19)
-        Me.txtIdAmostra.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtIdAmostra.Margin = New System.Windows.Forms.Padding(2)
         Me.txtIdAmostra.Name = "txtIdAmostra"
         Me.txtIdAmostra.Size = New System.Drawing.Size(295, 20)
         Me.txtIdAmostra.TabIndex = 1
@@ -144,7 +144,7 @@ Partial Class Form1
         'btnBuscar
         '
         Me.btnBuscar.Location = New System.Drawing.Point(444, 176)
-        Me.btnBuscar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnBuscar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(84, 41)
         Me.btnBuscar.TabIndex = 0
@@ -154,7 +154,7 @@ Partial Class Form1
         'btnLimpar
         '
         Me.btnLimpar.Location = New System.Drawing.Point(90, 176)
-        Me.btnLimpar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnLimpar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnLimpar.Name = "btnLimpar"
         Me.btnLimpar.Size = New System.Drawing.Size(84, 41)
         Me.btnLimpar.TabIndex = 0
@@ -179,7 +179,7 @@ Partial Class Form1
         Me.Controls.Add(Me.btnAtualizar)
         Me.Controls.Add(Me.btnLimpar)
         Me.Controls.Add(Me.btnCadastrar)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximumSize = New System.Drawing.Size(636, 293)
         Me.MinimumSize = New System.Drawing.Size(636, 293)
         Me.Name = "Form1"
