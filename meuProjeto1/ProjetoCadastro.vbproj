@@ -90,6 +90,7 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaces - Contratos\IAmostraRepositorio.vb" />
     <Compile Include="Models - Entidades\Amostra.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
