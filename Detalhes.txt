@@ -1,0 +1,1 @@
+O projeto foi adaptado para ficar mais dedicado a cada classe ter apenas 1 responsabilidade, adequando aos princípios SOLID

@@ -1,0 +1,5 @@
+﻿A pasta "Interfaces - Contratos" define contratos que devem ser implementados por classes, principalmente para abstrair dependências e permitir injeção de dependência, testes unitários, e desacoplamento do código.
+Ao programar através de interfaces, seu código depende de contratos, não de implementações concretas — o que é essencial para SOLID, especialmente o D de "Dependency Inversion Principle".
+Ex: IAmostraRepository - sua implementação poderia ser na classe ManipularAmostrasNoBanco, permitindo trocar o repositório.
+Ex: ICalculadoraArea - sua implementação poderia ser na classe AmostraService, separarando a lógica de cálculo para testes.
+

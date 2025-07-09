@@ -1,0 +1,2 @@
+﻿Na pasta "Services - Domain - Regra de Negócio" deverá ter somente as regras de negócio.
+Exemplos: Cálculos de área, cálculos de resistência, cálculos diversos solicitados por norma.

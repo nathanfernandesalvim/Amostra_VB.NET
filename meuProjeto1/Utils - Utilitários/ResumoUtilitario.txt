@@ -1,0 +1,2 @@
+﻿A pasta "Utils - Utilitários" deverá reunir funções auxiliares reutilizáveis que não pertencem diretamente ao domínio do sistema (a regra de negócio), mas ajudam no funcionamento geral.
+Exemplo: Funções de formatação, validações genéricas, cálculos matemáticos genéricos

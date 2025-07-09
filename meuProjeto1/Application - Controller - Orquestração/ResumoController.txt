@@ -1,0 +1,2 @@
+﻿A classe AmostraAplicationService orquestra a comunicação entre a interface de usuário (Form), a regra de negócio (AmostraDomainService) e o acesso aos dados (ManipularAmostrasNoBanco). 
+Coordenando o fluxo das operações relacionadas à amostr de forma centralizada, clara e desacoplada.
