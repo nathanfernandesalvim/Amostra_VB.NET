@@ -1,10 +1,13 @@
 ﻿Imports System.Data.OleDb
 Imports meuProjeto1.Models
+Imports meuProjeto1.Interfaces
 
 
 Namespace meuProjeto1.Data
 
     Public Class ManipularAmostrasNoBanco
+
+        Implements IAmostraRepositorio
 
         Private ReadOnly _conexao As CriarConexaoBanco
 
@@ -13,7 +16,7 @@ Namespace meuProjeto1.Data
             _conexao = conexao
         End Sub
 
-        Public Sub Inserir(amostra As Amostra)
+        Public Sub Inserir(amostra As Amostra) Implements IAmostraRepositorio.Inserir
             Using conn = _conexao.CriarConexao()
                 conn.Open()
                 Dim sql = "INSERT INTO Amostras (Nome, Diametro, Area) VALUES (?, ?, ?)"
@@ -26,7 +29,7 @@ Namespace meuProjeto1.Data
             End Using
         End Sub
 
-        Public Sub Atualizar(amostra As Amostra)
+        Public Sub Atualizar(amostra As Amostra) Implements IAmostraRepositorio.Atualizar
             Using conn = _conexao.CriarConexao()
                 conn.Open()
                 Dim sql = "UPDATE Amostras SET Nome = ?, Diametro = ?, Area = ? WHERE Id = ?"
@@ -40,7 +43,7 @@ Namespace meuProjeto1.Data
             End Using
         End Sub
 
-        Public Sub Deletar(id As Integer)
+        Public Sub Deletar(id As Integer) Implements IAmostraRepositorio.Deletar
             Using conn = _conexao.CriarConexao()
                 conn.Open()
                 Dim sql = "DELETE FROM Amostras WHERE Id = ?"
@@ -51,7 +54,7 @@ Namespace meuProjeto1.Data
             End Using
         End Sub
 
-        Public Function LerAmostra(id As Integer) As Amostra
+        Public Function LerAmostra(id As Integer) As Amostra Implements IAmostraRepositorio.LerAmostra
             Using conn = _conexao.CriarConexao()
                 conn.Open()
                 Dim sql = "SELECT * FROM Amostras WHERE Id = ?"
@@ -71,9 +74,11 @@ Namespace meuProjeto1.Data
                     End Using
                 End Using
             End Using
+            Throw New NotImplementedException()
         End Function
 
-        Public Function ObterPrimeiroRegistro() As Amostra
+
+        Public Function ObterPrimeiroRegistro() As Amostra Implements IAmostraRepositorio.ObterPrimeiroRegistro
             Using conn = _conexao.CriarConexao()
                 conn.Open()
                 Dim sql = "SELECT TOP 1 * FROM Amostras ORDER BY Id ASC"
@@ -92,6 +97,7 @@ Namespace meuProjeto1.Data
                     End Using
                 End Using
             End Using
+            Throw New NotImplementedException()
         End Function
 
     End Class
